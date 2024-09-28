@@ -1,0 +1,22 @@
+tensorflow==2.12.0
+pandas
+gdown               #google drive downloader
+dvc                 #data version control
+mlflow              #machine learning framework for model tracking and deployment
+notebook            #Jupyter notebook
+numpy
+matplotlib
+seaborn
+python-box          #library for handling box-cox transformations
+pyYAML              #library for handling YAML files
+tdqm                #progress bar for data processing  
+ensure==1.0.2       #library for type hinting
+joblib               #library for parallel computing
+types-pyYAML         #type hints for pyyaml
+scipy                #library for scientific computing
+Flask                #micro web framework for building web applications
+Flask-Cors           #library for enabling cross-origin resource sharing
+
+
+# Run the following command to install the required Python packages
+-e .

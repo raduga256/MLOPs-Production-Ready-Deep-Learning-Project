@@ -16,3 +16,18 @@ Tutorial: https://www.youtube.com/watch?v=nATRPPZ5dGE
 6. Update pipeline
 7. Update main.py
 8. Update the dvc.yaml
+
+
+## ChapterTwo: MLflow & DVC MLOps Tools Demo
+
+## Mlflow
+Using MLflow for experiment tracking. www.mlflow.org
+
+### Use Cases
+* How to log parameters, metrics and a model
+* How to register a model during logging
+
+
+## DVC
+Using DVC for project pipeline tracking.
+www.dagshub.com

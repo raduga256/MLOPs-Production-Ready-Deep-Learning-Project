@@ -1,7 +1,7 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from cnnClassifier import logger
+from chest_xray_classifier import logger
 import json
 import joblib
 from ensure import ensure_annotations
@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 import base64
 
-
+# This is
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
@@ -31,6 +31,9 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
             content = yaml.safe_load(yaml_file)
             logger.info(f"yaml file: {path_to_yaml} loaded successfully")
             return ConfigBox(content)
+    except FileNotFoundError:
+        logger.error(f"File not found: {path_to_yaml}")
+        raise FileNotFoundError(f"File not found: {path_to_yaml}")
     except BoxValueError:
         raise ValueError("yaml file is empty")
     except Exception as e:
